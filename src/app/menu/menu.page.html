@@ -1,0 +1,228 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Menu
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-toolbar no-border-top>
+  <ion-segment [(ngModel)]="menus">
+    <ion-segment-button value="food" class="x-large-seg-title">
+      FOOD
+    </ion-segment-button>
+    <ion-segment-button value="drink" class="x-large-seg-title">
+      DRINK
+    </ion-segment-button>
+  </ion-segment>
+</ion-toolbar>
+
+
+<ion-content>
+
+  <div [ngSwitch]="menus">
+
+    <div  *ngSwitchCase="'food'">
+
+      <ion-card>
+        <img src="assets/images/menu/food/Platters.jpg"/>
+        <ion-card-content>
+          <ion-card-title class="menu-header">
+            Platters for 3 People
+          </ion-card-title>
+          <p>
+            Spring Rolls, Samosa, Chicken Wings, Chips, Chicken Drum Stick, Fried Gizzard
+          </p>
+          <ion-badge class="price-badge">₦11,000</ion-badge>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card>
+        <img src="assets/images/menu/food/Platters.jpg"/>
+        <ion-card-content>
+          <ion-card-title class="menu-header">
+            Platters for 5 People
+          </ion-card-title>
+          <p>
+            Spring Rolls, Samosa, Chicken Wings, Chips, Chicken Drum Stick, Fried Gizzard
+          </p>
+          <ion-badge class="price-badge">₦18,000</ion-badge>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card>
+        <img src="assets/images/menu/food/Platters.jpg"/>
+        <ion-card-content>
+          <ion-card-title class="menu-header">
+            Platters for 10 People
+          </ion-card-title>
+          <p>
+            Spring Rolls, Samosa, Chicken Wings, Chips, Chicken Drum Stick, Fried Gizzard Sandwich
+          </p>
+          <ion-badge class="price-badge">₦36,000</ion-badge>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card>
+        <img src="assets/images/menu/food/green-salad-600x400.jpg"/>
+        <ion-card-content>
+          <ion-card-title class="menu-header">
+            Green Salad
+          </ion-card-title>
+          <p>
+            Lettuce, Cucumber, Green Pepper, Spring Onions, Tomato, Pastely
+          </p>
+          <ion-badge class="price-badge">₦3,600</ion-badge>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card class="welcome-card">
+        <ion-card-content class="menu-p-list">
+          <p>
+            Shaunz Peppered Chicken Wings (8 Pieces) <ion-badge>₦2,400</ion-badge>
+          </p>
+          <p>
+            Springs Rolls (4 Pieces) <ion-badge>₦3,600</ion-badge>
+          </p>
+          <p>
+            Samosa (4 Pieces) <ion-badge>₦3,600</ion-badge>
+          </p>
+          <p>
+            Asun (9 Pieces) <ion-badge>₦2,400</ion-badge>
+          </p>
+          <p>
+            Peppered Chicken (1/4 Chicken) <ion-badge>₦3,600</ion-badge>
+          </p>
+          <p>
+            Shaunz Peppered Snail (2 Pieces) <ion-badge>₦4,200</ion-badge>
+          </p>
+          <p>
+            Peppered Gizzard <ion-badge>₦3,600</ion-badge>
+          </p>
+        </ion-card-content>
+      </ion-card>
+
+    </div>
+
+
+    <div  *ngSwitchCase="'drink'">
+
+      <ion-card>
+        <img class="menu-drink-img" src="assets/images/menu/drinks/Hennessy-500x400.jpg"/>
+        <ion-card-content>
+          <ion-card-title class="menu-header">
+            Hennessy VS
+          </ion-card-title>
+          <p>
+            Cognac
+          </p>
+          <ion-badge class="price-badge">35cl ₦14,000</ion-badge>
+          <ion-badge class="price-badge red-bg-card">70cl ₦28,000</ion-badge>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card>
+        <img class="menu-drink-img" src="assets/images/menu/drinks/Hennessy-VSOP-500x400.jpg"/>
+        <ion-card-content>
+          <ion-card-title class="menu-header">
+            Hennessy VSOP
+          </ion-card-title>
+          <p>
+            Cognac
+          </p>
+          <ion-badge class="price-badge">70cl ₦30,000</ion-badge>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card>
+        <img class="menu-drink-img" src="assets/images/menu/drinks/hennessy-xo-500x400.jpg"/>
+        <ion-card-content>
+          <ion-card-title class="menu-header">
+            Hennessy XO
+          </ion-card-title>
+          <p>
+            Hennessy XO
+          </p>
+          <ion-badge class="price-badge">70cl N100,000</ion-badge>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card>
+        <img class="menu-drink-img" src="assets/images/menu/drinks/Remy-Martin-VSOP-500x400.jpg"/>
+        <ion-card-content>
+          <ion-card-title class="menu-header">
+            Remmy Martins VSOP
+          </ion-card-title>
+          <p>
+            Cognac
+          </p>
+          <ion-badge class="price-badge">70cl N30,000</ion-badge>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card>
+        <img class="menu-drink-img" src="assets/images/menu/drinks/remy-martin-xo-500x400.jpg"/>
+        <ion-card-content>
+          <ion-card-title class="menu-header">
+            Remmy Martins XO
+          </ion-card-title>
+          <p>
+            Cognac
+          </p>
+          <ion-badge class="price-badge">70cl N100,000</ion-badge>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card>
+        <img class="menu-drink-img" src="assets/images/menu/drinks/mapu-cabernet-sauvignon-500x400.jpg"/>
+        <ion-card-content>
+          <ion-card-title class="menu-header">
+            Mapu Cabernet Sauvignon
+          </ion-card-title>
+          <p>
+            Red Wine
+          </p>
+          <ion-badge class="price-badge">70cl N12,000</ion-badge>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card>
+        <img class="menu-drink-img" src="assets/images/menu/drinks/Escudo-Rojo-350x400.jpg"/>
+        <ion-card-content>
+          <ion-card-title class="menu-header">
+            Escudo Rojo
+          </ion-card-title>
+          <ion-badge class="price-badge">70cl N12,000</ion-badge>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card>
+        <img class="menu-drink-img" src="assets/images/menu/drinks/Salmos-Torres-500x400.jpg"/>
+        <ion-card-content>
+          <ion-card-title class="menu-header">
+            Salmos Torres
+          </ion-card-title>
+          <ion-badge class="price-badge">70cl N21,000</ion-badge>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card>
+        <img class="menu-drink-img" src="assets/images/menu/drinks/Cheteauneuf-Du-Pape-565x400.jpg"/>
+        <ion-card-content>
+          <ion-card-title class="menu-header">
+            Cheteauneuf Du Pape
+          </ion-card-title>
+          <ion-badge class="price-badge">70cl N22,000</ion-badge>
+        </ion-card-content>
+      </ion-card>
+
+
+    </div>
+
+  </div>
+
+</ion-content>

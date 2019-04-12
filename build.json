@@ -1,0 +1,11 @@
+{
+  "android": {
+    "release": {
+      "keystore": "kys-estate-release-key.jks",
+      "storePassword": "kys-estate#p@ssw0rd",
+      "alias": "kys-estate",
+      "password": "kys-estate#p@ssw0rd",
+      "keystoreType": ""
+    }
+  }
+}

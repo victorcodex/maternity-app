@@ -1,0 +1,92 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Photos & Videos
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-toolbar no-border-top>
+  <ion-segment [(ngModel)]="videosandphotos">
+    <ion-segment-button value="photos" class="x-large-seg-title">
+      PHOTOS
+    </ion-segment-button>
+    <ion-segment-button value="videos" class="x-large-seg-title">
+      VIDEOS
+    </ion-segment-button>
+  </ion-segment>
+</ion-toolbar>
+
+
+<ion-content>
+
+  <div [ngSwitch]="videosandphotos">
+
+    <div  *ngSwitchCase="'photos'">
+
+      <ion-card>
+        <img src="assets/images/Black-Photos-82.jpg"/>
+      </ion-card>
+
+      <ion-card>
+        <img src="assets/images/IMG_0599.jpg"/>
+      </ion-card>
+
+      <ion-card>
+        <img src="assets/images/IMG_0664-1024x683.jpg"/>
+      </ion-card>
+
+      <ion-card>
+        <img src="assets/images/Black-Photos-84.jpg"/>
+      </ion-card>
+
+      <ion-card>
+        <img src="assets/images/IMG_0602-300x300.jpg"/>
+      </ion-card>
+
+      <ion-card>
+        <img src="assets/images/IMG_0682.jpg"/>
+      </ion-card>
+
+      <ion-card>
+        <img src="assets/images/shaunzbar-sing-along.jpg"/>
+      </ion-card>
+
+    </div>
+
+
+    <div *ngSwitchCase="'videos'">
+
+      <ion-card>
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/76j7jHUUo6k" frameborder="0" allowfullscreen></iframe>
+      </ion-card>
+
+      <ion-card>
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/72L5M7QzQ60" frameborder="0" allowfullscreen></iframe>
+      </ion-card>
+
+      <ion-card>
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/NnNoJXLOm3s" frameborder="0" allowfullscreen></iframe>
+      </ion-card>
+
+      <ion-card>
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/nKbzrUQxzTw" frameborder="0" allowfullscreen></iframe>
+      </ion-card>
+
+      <ion-card>
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/vGcj4Z6Jstk" frameborder="0" allowfullscreen></iframe>
+      </ion-card>
+
+      <ion-card>
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/iQ2cZFchpPo" frameborder="0" allowfullscreen></iframe>
+      </ion-card>
+
+    </div>
+
+  </div>
+
+</ion-content>

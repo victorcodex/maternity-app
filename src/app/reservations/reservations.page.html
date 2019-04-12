@@ -1,0 +1,186 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Reservations
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-toolbar no-border-top>
+  <ion-segment [(ngModel)]="reservations">
+    <ion-segment-button value="weekday" class="x-large-seg-title">
+      WEEKDAY
+    </ion-segment-button>
+    <ion-segment-button value="weekend" class="x-large-seg-title">
+      WEEKEND/HOLIDAY
+    </ion-segment-button>
+    <ion-segment-button value="vip" class="x-large-seg-title">
+      V.I.P. SEATING
+    </ion-segment-button>
+  </ion-segment>
+</ion-toolbar>
+
+
+<ion-content>
+
+  <ion-card class="welcome-card ion-card-custom">
+    <img src="assets/images/Black-Photos-82.jpg">
+  </ion-card>
+
+  <div [ngSwitch]="reservations">
+
+    <div  *ngSwitchCase="'weekday'">
+
+      <ion-card class="welcome-card black-bg-card">
+        <ion-card-header>
+          <ion-card-subtitle class="gray-color">TABLE FOR 4</ion-card-subtitle>
+          <ion-card-title color="light">NGN 20,000</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+
+      <ion-card class="welcome-card">
+        <ion-card-header>
+          <ion-card-subtitle>TABLE FOR 6</ion-card-subtitle>
+          <ion-card-title>NGN 30,000</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+
+      <ion-card class="welcome-card red-bg-card">
+        <ion-card-header>
+          <ion-card-subtitle class="gray-color">TABLE FOR 10</ion-card-subtitle>
+          <ion-card-title color="light">NGN 50,000</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+
+      <ion-card class="welcome-card">
+        <ion-card-header>
+          <ion-card-subtitle>TABLE FOR 15</ion-card-subtitle>
+          <ion-card-title>NGN 75,000</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+
+      <ion-card class="welcome-card black-bg-card">
+        <ion-card-header>
+          <ion-card-subtitle class="gray-color">TABLE FOR 20</ion-card-subtitle>
+          <ion-card-title color="light">NGN 100,000</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+
+    </div>
+
+
+    <div  *ngSwitchCase="'weekend'">
+
+      <ion-card class="welcome-card black-bg-card">
+        <ion-card-header>
+          <ion-card-subtitle class="gray-color">TABLE FOR 4</ion-card-subtitle>
+          <ion-card-title color="light">NGN 30,000</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+
+      <ion-card class="welcome-card">
+        <ion-card-header>
+          <ion-card-subtitle>TABLE FOR 6</ion-card-subtitle>
+          <ion-card-title>NGN 40,000</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+
+      <ion-card class="welcome-card red-bg-card">
+        <ion-card-header>
+          <ion-card-subtitle class="gray-color">TABLE FOR 10</ion-card-subtitle>
+          <ion-card-title color="light">NGN 70,000</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+
+      <ion-card class="welcome-card">
+        <ion-card-header>
+          <ion-card-subtitle>TABLE FOR 15</ion-card-subtitle>
+          <ion-card-title>NGN 120,000</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+
+      <ion-card class="welcome-card black-bg-card">
+        <ion-card-header>
+          <ion-card-subtitle class="gray-color">TABLE FOR 20</ion-card-subtitle>
+          <ion-card-title color="light">NGN 150,000</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+
+    </div>
+
+
+    <div  *ngSwitchCase="'vip'">
+
+      <ion-card class="welcome-card black-bg-card">
+        <ion-card-header>
+          <ion-card-subtitle class="gray-color">TABLE FOR 4</ion-card-subtitle>
+          <ion-card-title color="light">NGN 60,000</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+
+      <ion-card class="welcome-card">
+        <ion-card-header>
+          <ion-card-subtitle>TABLE FOR 6</ion-card-subtitle>
+          <ion-card-title>NGN 80,000</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+
+      <ion-card class="welcome-card red-bg-card">
+        <ion-card-header>
+          <ion-card-subtitle class="gray-color">TABLE FOR 10</ion-card-subtitle>
+          <ion-card-title color="light">NGN 140,000</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+
+      <ion-card class="welcome-card">
+        <ion-card-header>
+          <ion-card-subtitle>TABLE FOR 15</ion-card-subtitle>
+          <ion-card-title>NGN 240,000</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+
+      <ion-card class="welcome-card black-bg-card">
+        <ion-card-header>
+          <ion-card-subtitle class="gray-color">TABLE FOR 20</ion-card-subtitle>
+          <ion-card-title color="light">NGN 300,000</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+
+    </div>
+
+  </div>
+
+
+  <ion-card class="welcome-card">
+    <ion-card-header>
+      <ion-card-subtitle>For reservations, cancellations and change of date</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+    <p class="grayish-bg">
+      Call us
+      <strong>08038077536, 07089253344, 014544735 (Ext. 117)</strong><br/>
+      or<br/> Email us at contact@shaunzbar.co.uk<br/>
+      To make and confirm your booking.<br/>
+      Make payment into the ACC/below<br/><br/>
+
+      <strong>
+        Zenith Bank<br/>
+        Shaunz Nig Ltd<br/>
+        Acc: 1013063796<br/><br/>
+      </strong>
+
+      <strong class="red-color">NO REFUND</strong><br/>
+      ** Reservations cannot be kept longer than 8pm.<br/>
+      ** Please place a call to confirm your booking<br/><br/>
+      ** There are no refunds on deposits ; Credit notes equivalent to deposit sum will be applied to
+      customers account (i.e. you may take items worth total deposited). Credit note will not exceed 2months.
+    </p>
+    </ion-card-content>
+  </ion-card>
+
+
+</ion-content>

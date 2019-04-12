@@ -1,0 +1,75 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{name}}</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <!--<h3>id: {{id}}</h3>-->
+  <!--<h3>image: {{image}}</h3>-->
+  <!--<h3>name: {{name}}</h3>-->
+  <!--<h3>description: {{description}}</h3>-->
+  <!--<h3>location: {{location}}</h3>-->
+  <!--<h3>rate: {{rate}}</h3>-->
+  <!---->
+
+  <ion-card>
+    <img src="assets/images/hospitals/{{image}}" />
+    <ion-card-content>
+      <ion-card-title class="menu-header">
+        {{name}}
+      </ion-card-title>
+      <p>
+        <ion-icon name="pin" class="location-icon"></ion-icon> {{location}}
+      </p>
+      <p class="rating-container">
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+
+  <ion-card>
+    <ion-card-content>
+      <ion-card-title class="menu-header">
+        Description
+      </ion-card-title>
+      <p>{{description}}</p>
+    </ion-card-content>
+  </ion-card>
+
+
+  <ion-card>
+    <ion-card-content>
+      <ion-card-title class="menu-header">
+        Rate Hospital
+      </ion-card-title>
+
+      <ion-item>
+        <ion-label position="floating">Your name</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Add comment about your experience</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+
+      <ion-button color="secondary">Rate</ion-button>
+
+    </ion-card-content>
+  </ion-card>
+
+
+
+
+
+</ion-content>

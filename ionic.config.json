@@ -1,0 +1,7 @@
+{
+  "name": "maternityapp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
